@@ -101,7 +101,7 @@ public class ModuleController implements Initializable, ControlledScreen{
         courseNameTextField.setText(courseNameSetter);
         creditHourTextField.setText(creditHourSetter);
         if(courseCategorySetter != null){
-            courseCategoryComboBox.setValue(misc.formatToFullCategory(courseCategorySetter));
+            courseCategoryComboBox.setValue(courseCategorySetter);
         }
         courseYearComboBox.setValue(CourseYearSetter);
         courseSemComboBox.setValue(courseSemSetter);
@@ -129,12 +129,12 @@ public class ModuleController implements Initializable, ControlledScreen{
         courseYearComboBox.setItems(year);
         nationalityComboBox.setItems(nationalityList);
         
-//        MuetBandComboBox.getSelectionModel().selectFirst();
-//        ProgrammeComboBox.getSelectionModel().selectFirst();
-//        courseCategoryComboBox.getSelectionModel().selectFirst();
-//        courseSemComboBox.getSelectionModel().selectFirst();
-//        courseYearComboBox.getSelectionModel().selectFirst();
-//        nationalityComboBox.getSelectionModel().selectFirst();
+        MuetBandComboBox.getSelectionModel().selectFirst();
+        ProgrammeComboBox.getSelectionModel().selectFirst();
+        courseCategoryComboBox.getSelectionModel().selectFirst();
+        courseSemComboBox.getSelectionModel().selectFirst();
+        courseYearComboBox.getSelectionModel().selectFirst();
+        nationalityComboBox.getSelectionModel().selectFirst();
         
 //        int num = formatToFullCategory(courseCategorySetter);
 //        System.out.println(num);
