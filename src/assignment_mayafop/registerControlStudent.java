@@ -186,7 +186,7 @@ public class registerControlStudent implements Initializable,ControlledScreen {
         
 
         try {
-            PreparedStatement statement = connectDB.prepareStatement("INSERT INTO student (matric_num, siswamail, password, student_name, student_batch, student_faculty, student_programme, "
+            PreparedStatement statement = connectDB.prepareStatement("INSERT INTO student (matric_num, siswamail, student_password, student_name, student_batch, student_faculty, student_programme, "
                 + "student_gender, student_race, student_date_of_birth, student_studyyear, student_studysem, student_nationality, student_ic_passport, "
                 + "credit_hour) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
         
